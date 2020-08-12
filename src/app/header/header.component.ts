@@ -6,10 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
+  //toggling nav bar without neading jquery or any js library to make the code cleaner
+  isOpen:boolean= false;
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  togglerNavBar(){
+    this.isOpen = !this.isOpen;
+
   }
 
 }

@@ -1,27 +1,27 @@
-.portfolio{
+#portfolio{
 
 }
-.portfolio h2{
+#portfolio h2{
     color:rgba(0, 0, 0, 0.781);
 }
 
-.portfolio button{
+#portfolio button{
     padding: 6px 12px;
     margin: 10px;
    
 
 
 }
-.portfolio button:first-of-type{
+#portfolio button:first-of-type{
     background-color:  #427bff;
     color: #ecf5ff; 
 }
-.portfolio .butn{
+#portfolio .butn{
     background-color: #ecf5ff;
     color: #427bff;   
 }
 
-.portfolio .butn:hover{
+#portfolio .butn:hover{
     background-color:  #427bff;
     color: #ecf5ff; 
 

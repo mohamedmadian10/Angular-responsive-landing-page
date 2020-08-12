@@ -5,6 +5,8 @@
     background-size: cover;
     background-position: center center;
     color: #fff;
+    margin-top: 50px;
+    overflow: hidden;
 }
 .main-header h1{
     font-weight: bold;
@@ -13,16 +15,41 @@
     line-height: 1.5;
 }
 
+@media(max-width:992px){
+    .main-header h1{
+      text-align: center;
+      left: auto;
+      max-width: 100%;
+      font-size: 30px;
+    }
+  }
+
 .main-header h1 span{
     text-decoration: underline;
     color: #74b5fc;
 }
+
+/* buttons */
 
 .main-header button{
     color: #fff;
     padding: 6px 35px;
     margin: 15px;
 }
+.btns-header button:hover{
+    background-color: #fff;
+    color: #254a99;
+    
+}
+
+@media(max-width:992px){
+    .btns-header{
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+
 
 
 .intro-img{
