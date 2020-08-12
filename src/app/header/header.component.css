@@ -1,0 +1,34 @@
+.main-header{
+    background-image: url('../../assets/images/intro-bg.png');
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+}
+.main-header h1{
+    font-weight: bold;
+    font-size: 50px;
+    max-width: 900px;
+    line-height: 1.5;
+}
+
+.main-header h1 span{
+    text-decoration: underline;
+    color: #74b5fc;
+}
+
+.main-header button{
+    color: #fff;
+    padding: 6px 35px;
+    margin: 15px;
+}
+
+
+.intro-img{
+    width: 100%;
+    min-height: 250px;
+    overflow: hidden;  
+
+}
+

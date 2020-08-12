@@ -1,0 +1,27 @@
+.about-us{
+    margin-top: 25px;
+    
+}
+
+article h4{
+    padding-top: 15px;
+}
+
+ul li{
+    list-style-type: none;
+}
+
+.circle{
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    border: 1px solid rgb(20, 20, 175);
+    /* float: left; */
+}
+
+.circle span {
+    color:rgb(20, 20, 175);
+    font-size: 1.5em;
+    
+
+}

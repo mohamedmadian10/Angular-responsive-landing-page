@@ -1,0 +1,21 @@
+<section class="our-clients">
+  <div class="container">
+    <div class="row">
+      <div class="col text-center">
+        <h2 class="p-5">Our Clients</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo sit vero
+          vel voluptas alias<br />
+          voluptate, distinctio sint ea
+        </p>
+      </div>
+    </div>
+    <div class="row p-5 client-imags-wrapper">
+      <div class="col-md-3 m-b-4" *ngFor="let client of clientImages">
+          <img loading="lazy" class="img-fluid" [src]="client.src" alt="client">
+          <!-- <img src="../../assets/images/clients/client-1.png" alt=""> -->
+
+      </div>
+    </div>
+  </div>
+</section>

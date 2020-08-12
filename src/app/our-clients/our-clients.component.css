@@ -1,0 +1,12 @@
+.our-clients{
+    background-color: #ecf5ff;
+}
+
+/* .client-imags-wrapper{
+    
+} */
+
+.client-imags-wrapper .col-md-3{
+    background-color: #fff;
+    border: 1px solid  #ecf5ff;;
+}

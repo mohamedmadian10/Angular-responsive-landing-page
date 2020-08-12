@@ -1,0 +1,55 @@
+<section class="portfolio">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col">
+        <h2 class="p-5">Our Portfolio</h2>
+      </div>
+      <div class="col-md-12 d-flex justify-content-center mb-5">
+        <button
+          (click)="onFilter('all')"
+          type="button"
+          class="btn rounded-pill"
+        >
+          All
+        </button>
+        <button
+          (click)="onFilter('app')"
+          type="button"
+          class="butn btn rounded-pill"
+          data-rel="1"
+        >
+          App
+        </button>
+        <button
+          (click)="onFilter('card')"
+          type="button"
+          class="butn btn rounded-pill "
+        >
+          Card
+        </button>
+        <button
+          (click)="onFilter('web')"
+          type="button"
+          class="butn btn rounded-pill"
+        >
+          Web
+        </button>
+      </div>
+    </div>
+    <div class="gallery" id="gallery">
+      <!-- Grid column -->
+      <div
+        class="mb-3 pics animation "
+        *ngFor="let image of filteredImages"
+      >
+        <img
+          loading="lazy"
+          class="img-fluid"
+          [src]="image.src"
+          alt="Card image cap"
+        />
+      </div>
+      <!-- Grid column -->
+    </div>
+  </div>
+</section>
