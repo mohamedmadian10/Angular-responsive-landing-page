@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ImagesService } from '../_service/images.service';
 
 @Component({
   selector: 'app-portfolio',
@@ -6,27 +7,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./portfolio.component.css']
 })
 export class PortfolioComponent implements OnInit {
-  allImages = [
-    {type:'app', src:'assets/images/portfolio/app1.jpg'},
-    {type:'web', src:'assets/images/portfolio/web2.jpg'},
-    {type:'web', src:'assets/images/portfolio/web1.jpg'},
-    {type:'web', src:'assets/images/portfolio/web3.jpg'},
-    {type:'card', src:'assets/images/portfolio/card2.jpg'},
-    {type:'card', src:'assets/images/portfolio/card3.jpg'},
-    {type:'app', src:'assets/images/portfolio/app2.jpg'},
-    {type:'app', src:'assets/images/portfolio/app3.jpg'},
-    {type:'card', src:'assets/images/portfolio/card1.jpg'},
-  ];
+  allImages = [];
 
   filteredImages = [];
 
-  constructor() { }
+  constructor(private imageService:ImagesService) { }
 
   ngOnInit(): void {
+    //get all portfolio images
+    this.allImages = this.imageService.getPortfolioImages();
     this.filteredImages = this.allImages
   }
 
-  //filtering the gallary images category
+  //filtering the portfolio images to categories
   onFilter(type:string){
     if(type === "all"){
       return this.filteredImages = this.allImages;

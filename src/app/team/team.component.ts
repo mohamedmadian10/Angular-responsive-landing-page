@@ -4,15 +4,14 @@ import { ImagesService } from '../_service/images.service';
 @Component({
   selector: 'app-team',
   templateUrl: './team.component.html',
-  styleUrls: ['./team.component.css']
+  styleUrls: ['./team.component.css'],
 })
 export class TeamComponent implements OnInit {
-  teamImages = [];
+  teamImages: any[] = [];
 
-  constructor(private imageService:ImagesService) { }
+  constructor(private imageService: ImagesService) {}
 
   ngOnInit(): void {
     this.teamImages = this.imageService.getTeamImages();
   }
-
 }

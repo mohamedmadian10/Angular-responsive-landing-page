@@ -1,4 +1,8 @@
-.contact-us span{
-    color: blue;
-    font-size: 1rem;
+#contactus span {
+  color: blue;
+  font-size: 1rem;
+}
+
+form {
+  width: 100%;
 }

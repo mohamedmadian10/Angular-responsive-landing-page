@@ -1,4 +1,4 @@
-<section id="portfolio">
+<section id="portfolio" #portfolio>
   <div class="container">
     <div class="row text-center">
       <div class="col">
@@ -23,7 +23,7 @@
         <button
           (click)="onFilter('card')"
           type="button"
-          class="butn btn rounded-pill "
+          class="butn btn rounded-pill"
         >
           Card
         </button>
@@ -36,18 +36,18 @@
         </button>
       </div>
     </div>
-    <div class="gallery" id="gallery">
+    <div class="gallery" >
       <!-- Grid column -->
-      <div
-        class="mb-3 pics animation "
-        *ngFor="let image of filteredImages"
-      >
+      <div class="mb-3 pics animation" *ngFor="let image of filteredImages">
         <img
           loading="lazy"
-          class="img-fluid"
+          class="img-fluid image"
           [src]="image.src"
           alt="Card image cap"
         />
+        <div class="overlay">
+          <div class="text">{{image.type}}</div>
+        </div>
       </div>
       <!-- Grid column -->
     </div>

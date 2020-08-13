@@ -3,7 +3,9 @@ import { NgModule } from '@angular/core';
 import {HttpClientModule} from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CarouselModule } from 'ngx-owl-carousel-o';
-import { GoogleMapsModule } from '@angular/google-maps'
+import { GoogleMapsModule } from '@angular/google-maps';
+import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
+
 
 
 
@@ -36,7 +38,8 @@ import { FooterComponent } from './footer/footer.component';
     HttpClientModule,
     BrowserAnimationsModule,
     CarouselModule,
-    GoogleMapsModule
+    GoogleMapsModule,
+    ScrollToModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

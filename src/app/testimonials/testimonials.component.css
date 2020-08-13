@@ -1,12 +1,12 @@
-.testimonials{
-    background-color: #ecf5ff;
-    padding-bottom: 40px;
+.testimonials {
+  background-color: #ecf5ff;
+  padding-bottom: 40px;
 }
 
-.testimonials .testim-desc{
-    font-style: italic;
+.testimonials .testim-desc {
+  font-style: italic;
 }
 
-.avatar-img{
-    max-width:150px;
+.avatar-img {
+  max-width: 150px;
 }
